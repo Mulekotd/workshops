@@ -1,41 +1,13 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Workshops práticos de tecnologia.">
-  <title>Workshops</title>
-  <style>
-    :root { --ink: #061b2c; --blue: #137cfa; --cyan: #52d9ff; --paper: #f5f9fc; --line: #cbdce8; --muted: #577085; }
-    * { box-sizing: border-box; }
-    body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 32px; color: var(--ink); background: radial-gradient(circle at 80% 15%, #dff7ff, transparent 30%), var(--paper); font-family: Arial, sans-serif; }
-    main { width: min(100%, 880px); }
-    .eyebrow { margin: 0 0 16px; color: var(--blue); font: 800 11px monospace; letter-spacing: 2px; }
-    h1 { max-width: 620px; margin: 0; font-size: clamp(42px, 7vw, 78px); line-height: .95; letter-spacing: -4px; }
-    h1 em { color: var(--blue); font-style: normal; }
-    .intro { max-width: 520px; margin: 22px 0 38px; color: var(--muted); font-size: 18px; line-height: 1.5; }
-    .workshops { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
-    .workshop { display: flex; align-items: center; gap: 16px; padding: 22px; color: inherit; text-decoration: none; background: #fff; border: 1px solid var(--line); border-radius: 14px; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
-    .workshop:hover, .workshop:focus-visible { border-color: var(--blue); box-shadow: 7px 7px 0 var(--cyan); outline: none; transform: translate(-2px, -2px); }
-    .icon { width: 48px; height: 48px; object-fit: contain; }
-    .workshop small { display: block; margin-bottom: 5px; color: var(--blue); font: 800 10px monospace; letter-spacing: 1.4px; }
-    .workshop strong { font-size: 20px; }
-    .arrow { margin-left: auto; color: var(--blue); font-size: 22px; }
-  </style>
-</head>
-<body>
-  <main>
-    <p class="eyebrow">MULEKOTD • WORKSHOPS</p>
-    <h1>Aprenda na <em>prática.</em></h1>
-    <p class="intro">Selecione um workshop para acessar o material e os exercícios.</p>
-
-    <nav class="workshops" aria-label="Workshops disponíveis">
-      <a class="workshop" href="docker/index.html">
-        <img class="icon" src="docker/assets/docker-icon.png" alt="">
-        <span><small>WORKSHOP 01</small><strong>Docker</strong></span>
-        <span class="arrow" aria-hidden="true">→</span>
-      </a>
-    </nav>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Workshops práticos de tecnologia." />
+    <title>Workshops</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
