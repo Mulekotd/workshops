@@ -1,0 +1,10 @@
+.react-card:hover,
+.react-card:focus-visible {
+  border-color: #087ea4;
+  box-shadow: 7px 7px 0 #9be8ff;
+}
+
+.react-card small,
+.react-card .workshop-arrow {
+  color: #087ea4;
+}

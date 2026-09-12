@@ -1,0 +1,10 @@
+.git-card:hover,
+.git-card:focus-visible {
+  border-color: #f05033;
+  box-shadow: 7px 7px 0 #ffd1c7;
+}
+
+.git-card small,
+.git-card .workshop-arrow {
+  color: #f05033;
+}

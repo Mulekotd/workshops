@@ -1,0 +1,14 @@
+.deck--docker .brand-icon,
+.deck--docker .hero-icon {
+  object-fit: contain;
+}
+
+.deck--docker .brand-icon {
+  width: 38px;
+  height: 38px;
+}
+
+.deck--docker .hero-icon {
+  width: 120px;
+  height: 120px;
+}
