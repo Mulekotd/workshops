@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
-import Home from "../pages/Home";
+
+import Home from "/src/pages/Home";
 
 const DockerWorkshop = lazy(() => import("../pages/Docker"));
 const GitWorkshop = lazy(() => import("../pages/Git"));

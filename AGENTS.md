@@ -2,9 +2,9 @@
 
 ## Code quality
 
-For every feature or JSX revision, follow [`better-code`](docs/skills/better-code/SKILL.md).
-For image assets, follow [`image-imports`](docs/skills/image-imports/SKILL.md).
-For visual symbols in source code, follow [`character-encoding`](docs/skills/character-encoding/SKILL.md).
+For every feature or JSX revision, follow [`better-code`](.agents/skills/better-code/SKILL.md).
+For image assets, follow [`image-imports`](.agents/skills/image-imports/SKILL.md).
+For visual symbols in source code, follow [`character-encoding`](.agents/skills/character-encoding/SKILL.md).
 
 - Favor small, readable components and descriptive names.
 - Keep static content outside render functions and avoid compressed one-line JSX.
