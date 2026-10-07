@@ -69,6 +69,27 @@ header small {
   color: var(--muted);
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.workshops-link {
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 8px 11px;
+  color: var(--ink);
+  font: 700 11px Arial, sans-serif;
+  text-decoration: none;
+}
+
+.workshops-link:hover,
+.workshops-link:focus-visible {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
 .menu-button {
   display: none;
   border: 0;
@@ -698,6 +719,10 @@ footer > span {
 
   header small {
     display: none;
+  }
+
+  .header-actions {
+    gap: 12px;
   }
 
   .menu-button {

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import "./workshop-deck.css";
 
 const COPY_FEEDBACK_DURATION = 1200;
@@ -119,10 +120,15 @@ export default function WorkshopDeck({ title, accent, icon, iconAlt, number, sli
           <img className="brand-icon" src={icon} alt={iconAlt} />
           <b>{title}<em>LAB</em></b>
         </button>
-        <small>WORKSHOP &bull; {number}</small>
-        <button className="menu-button" type="button" aria-label="Abrir menu" aria-expanded={isMenuOpen} onClick={() => setIsMenuOpen((isOpen) => !isOpen)}>
-          &#9776;
-        </button>
+        <div className="header-actions">
+          <small>WORKSHOP &bull; {number}</small>
+          <Link className="workshops-link" to="/">
+            Todos os workshops
+          </Link>
+          <button className="menu-button" type="button" aria-label="Abrir menu" aria-expanded={isMenuOpen} onClick={() => setIsMenuOpen((isOpen) => !isOpen)}>
+            &#9776;
+          </button>
+        </div>
       </header>
 
       <aside className={isMenuOpen ? "open" : ""}>
